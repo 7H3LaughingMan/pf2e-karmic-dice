@@ -1,0 +1,65 @@
+{
+    "pf2e-karmic-dice": {
+        "adjustRoll": "Adjusted {originalResult} to {result}.",
+        "headers": {
+            "roles": "Roles",
+            "history": "History",
+            "lowerThreshold": "Lower Threshold",
+            "upperThreshold": "Upper Threshold",
+            "nudge": "Nudge",
+            "heroPoints": "Hero Points"
+        },
+        "settings": {
+            "history": {
+                "value": {
+                    "name": "Length",
+                    "hint": "The number of rolls to keep in history for each user. Note: No rolls will be nudged until a user's history length reaches this value."
+                }
+            },
+            "lowerThreshold": {
+                "enabled": {
+                    "name": "Enabled",
+                    "hint": "When enabled this will set the lower threshold for when rolls will be nudged upwards."
+                },
+                "value": {
+                    "name": "Value",
+                    "hint": "The average roll based on a user's history needs to be below or equal to this amount before it will nudge their dice upward."
+                }
+            },
+            "upperThreshold": {
+                "enabled": {
+                    "name": "Enabled",
+                    "hint": "When enabled this will set the upper threshold for when rolls will be nudged downwards."
+                },
+                "value": {
+                    "name": "Value",
+                    "hint": "The average roll based on a user's history needs to be above or equal to this amount before it will nudge their dice downward."
+                }
+            },
+            "nudge": {
+                "value": {
+                    "name": "Value",
+                    "hint": "The amount to nudge a user's dice upwards or downwards."
+                },
+                "cumulative": {
+                    "name": "Cumulative",
+                    "hint": "The amount a user's dice is nudged is multiplied by the number of times it has had to nudge their dice in a row."
+                }
+            },
+            "heroPoint": {
+                "enabled": {
+                    "name": "Enabled",
+                    "hint": "When enabled this will adjust rerolls using a Hero Point using the below settings. If a reroll is adjusted then it will not attempt to see if the roll is above or below the treshold to be nudged."
+                },
+                "value": {
+                    "name": "Value",
+                    "hint": "The amount to add to the natural result of a reroll using a Hero Point when the threshold is met."
+                },
+                "threshold": {
+                    "name": "Threshold",
+                    "hint": "If the natural result of a reroll using a Hero Point is below or equal to this amount, then the result will be adjusted."
+                }
+            }
+        }
+    }
+}

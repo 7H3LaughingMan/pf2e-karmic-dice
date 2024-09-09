@@ -1,0 +1,12 @@
+{
+  "name": "pf2e-karmic-dice",
+  "type": "module",
+  "version": "0.0.0",
+  "private": "true",
+  "scripts": {
+    "changelog": "changelog --format markdownling --create --release"
+  },
+  "dependencies": {
+    "keep-a-changelog": "^2.5.3"
+  }
+}

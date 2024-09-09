@@ -1,0 +1,15 @@
+div[data-setting-id="pf2e-karmic-dice.player"]>p.notes {
+    display: none;
+}
+
+div[data-setting-id="pf2e-karmic-dice.trusted"]>p.notes {
+    display: none;
+}
+
+div[data-setting-id="pf2e-karmic-dice.assistant"]>p.notes {
+    display: none;
+}
+
+div[data-setting-id="pf2e-karmic-dice.gamemaster"]>p.notes {
+    display: none;
+}
