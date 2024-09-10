@@ -7,7 +7,7 @@ Hooks.once("init", () => {
         const oldRoll = await wrapped(options);
         const newRoll = JSON.parse(JSON.stringify(oldRoll));
 
-        if (this._root.constructor.name === "CheckRoll" && game.settings.get("pf2e-karmic-dice", ROLES[game.user.role])) {
+        if (this._root?.constructor.name === "CheckRoll" && game.settings.get("pf2e-karmic-dice", ROLES[game.user.role])) {
             const userKarma = game.user.getFlag("pf2e-karmic-dice", "karma") ?? { history: [], cumulative: 0 };
 
             userKarma.history.push(oldRoll.result);
