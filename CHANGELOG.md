@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Fixed
 
-- Make sure `_root` is not undefined, resolved [#2].
+- Make sure `_root` is not undefined, resolves [#2].
 
 ## [6.0.0] - 2024-09-09
 
